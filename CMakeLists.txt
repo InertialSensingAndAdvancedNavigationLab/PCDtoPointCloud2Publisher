@@ -29,7 +29,7 @@ target_link_libraries(PCDtoPointCloud2Publisher ${PCL_LIBRARIES})
 
 # 链接库
 install(TARGETS
-  WinyunqPublisher
+  PCDtoPointCloud2Publisher
   DESTINATION lib/${PROJECT_NAME}
 )
 install(
