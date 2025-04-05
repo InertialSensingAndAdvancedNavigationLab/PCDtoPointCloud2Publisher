@@ -1,9 +1,9 @@
 PCDtoPointCloud2Publisher:
   ros__parameters:
     # 输入路径（单文件或文件夹）
-    inputPath: "data/PCD"
+    inputPath: "data/PCD/scans_1.pcd"
     # 是否启用文件夹模式（true为文件夹，false为单文件）
-    inputFolderMode: true
+    inputFolderMode: false
     FolderOptions: # 文件夹模式参数（仅当inputFolderMode为true时生效）
       # 播放模式（可选值：sequential：按照文件夹顺序播放, parallel：播放全部文件夹, split：将文件夹视为分包）
       playMode: "split"
@@ -33,6 +33,6 @@ PCDtoPointCloud2Publisher:
     pclPointType: "PointXYZI"
     # 公共播放参数
     # 播放速率（>1快放，<1 慢放）
-    playRate: 100.0
+    playRate: 1.0
     # 是否循环播放（单文件模式循环文件，文件夹模式循环整个序列）
     playLoop: true
